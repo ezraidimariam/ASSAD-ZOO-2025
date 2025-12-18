@@ -1,0 +1,179 @@
+/* === Body et navbar === */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #6a4f3d;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffb74d;
+}
+
+/* === Sections principales / hero === */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fddc99;
+    padding: 50px 20px;
+    margin-bottom: 20px; /* espace après le hero */
+}
+
+.hero h1 {
+    color: #6a4f3d;
+    font-size: 2rem;
+    margin: 0 0 10px 0;
+}
+
+.hero p {
+    color: #4e342e;
+    margin: 0 0 20px 0;
+}
+
+/* === Cartes animaux / visites === */
+.animals-section, .animal-list, .tours-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    margin-bottom: 30px; /* espace avant CTA */
+}
+
+.animal-card, .tour-card {
+    background-color: #fff3e0;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+    width: 30%;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.animal-card img, .tour-card img {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.animal-card:hover, .tour-card:hover {
+    transform: scale(1.05);
+}
+
+/* === Boutons === */
+.btn-warning {
+    background-color: #ffb74d;
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #ff9800;
+    color: #fff;
+}
+
+/* === Sections CTA === */
+.cta-section {
+    background-color: #ffb74d;
+    color: #6a4f3d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px; /* espace généreux pour descendre le texte */
+    margin-bottom: 20px; /* espace avant footer */
+}
+
+.cta-section a.btn {
+    background-color: #6a4f3d;
+    color: #fff;
+}
+
+.cta-section a.btn:hover {
+    background-color: #4e342e;
+}
+
+/* === Footer === */
+footer {
+    background-color: #6a4f3d;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* === Formulaires === */
+form {
+    margin-top: 10px;
+}
+
+input, select {
+    border-radius: 5px;
+}
+
+/* === Cards détail animal / visite === */
+.animal-detail, .tour-detail {
+    background-color: #fff3e0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.animal-detail img, .tour-detail img {
+    width: 50%;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* === Tables dashboard === */
+.table {
+    background: #fff;
+    border-radius: 5px;
+}
+
+.section {
+    background-color: #fff3e0;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* === Commentaires === */
+.comment {
+    background-color: #fff3e0;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-align: left;
+}
+
+/* === Responsive === */
+@media screen and (max-width: 768px) {
+    .animal-card, .tour-card {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .animal-card, .tour-card {
+        width: 90%;
+    }
+    .animal-detail img, .tour-detail img {
+        width: 80%;
+    }
+}
